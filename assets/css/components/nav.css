@@ -1,0 +1,95 @@
+.topVar{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo{
+            width: 200px;
+            overflow: hidden;
+            img{
+                  object-fit: cover;
+                  object-position: center;
+                  width: 100%;
+                  height: 100%; 
+            }
+     }
+     .leftB0x{
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      justify-content: space-between;
+      margin-right: 5%;
+      font-size: var(--font-size-small);
+      .searchBox{
+            border: 1px solid var(--color-btn-primary);
+            padding: 6px;
+            display: flex;
+            gap: 10px;
+            position: relative;
+            input{
+                  border: none;
+                  background-color: inherit;
+            }
+            span{
+                  display: flex;
+                  align-items: center;
+                  cursor: pointer;
+            }
+      }
+      .iconBox{
+            cursor: pointer;
+            display: flex;
+            gap: 10px;
+            align-items: center;  
+      }
+     }
+}
+input:focus{
+      outline: none;
+}
+.searchBox >span::after{
+      content: "";
+      width: 1px;
+      height: 60%;
+      background-color: var(--color-btn-primary);
+      position: absolute;
+      left: 35%;
+      top: 20%;
+}
+nav{
+      background-color: var(--color-btn-primary);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .Category{
+            display: flex;
+            align-items: center;
+            background-color: var(--color-btn-secondary);
+             padding: 16px;
+            color: var(--color-text-secondary);
+            cursor: pointer;
+      }
+      ul{
+            display: flex;
+            gap: 30px;
+            li{
+                  list-style: none;
+                  a{
+                        text-decoration: none;
+                        font-size: var( --font-size-body);
+                        color: var(--color-text-secondary);
+                  }
+            }
+      }
+      .callBox{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: var(--font-size-small);
+            color: var(--color-text-secondary);
+      }
+}
+
+
+
+
+
