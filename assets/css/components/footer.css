@@ -19,3 +19,15 @@ footer{
                   }
             }
 }
+
+/* Responsive */
+
+@media (max-width:768px) {
+      footer{
+          flex-wrap: wrap;
+      }
+      h4{
+            font-size: var();
+      }
+      
+}

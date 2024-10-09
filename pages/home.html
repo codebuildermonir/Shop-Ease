@@ -9,11 +9,12 @@
       <link rel="stylesheet" href="/assets/css/components/nav.css">
       <link rel="stylesheet" href="/assets/css/components/footer.css">
       <link rel="stylesheet" href="/assets/css/home.css">
+      <link rel="stylesheet" href="/assets/css/responsive.css">
        
  </head>
  <body>
       <header>
-            <div class="topVar">
+            <div class="topVar container" >
                   <div class="logo"><img src="/assets/images/shopEase.png" alt=""></div>
                   <div class="leftB0x">
                         <div class="searchBox">
@@ -25,16 +26,22 @@
                               <img src="/assets/icons/person_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                               <img src="/assets/icons/favorite_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                               <img src="/assets/icons/shopping_bag_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                              <img src="/assets/icons/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                              <img class="menuBar" src="/assets/icons/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                         </div>
                   </div>
             </div>
              <nav>
-                  <div class="Category">
-                              <span>All Category </span>
+                  <div class="container navContainer">
+                        <div class="category-box">
+                              <span class="category-text">All Category </span>
                               <img src="/assets/icons/arrow_drop_down_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""> 
                         </div>
-                  <ul>
+                        <ul class="category-items">
+                              <li>Best Sellers</li>
+                              <li>Trending</li>
+                              <li>New Arrival</li>
+                          </ul>
+                  <ul class="menu">
                         <li> <a href="#">Home</a> </li>
                         <li> <a href="#">Shop</a> </li>
                         <li> <a href="#">About</a> </li>
@@ -48,23 +55,73 @@
                               +880 1753794305
                         </span>
                   </div>
-             </nav>
+                  </div> 
+             </nav> 
       </header>
-      <main class="container">
+       <main class="container">
             <section class="hero-section">
-                  <div class="content-box">
-                        <h1>The Best <br> Collection 2024</h1>
-                        <p>Luxury fashionable clothing and stationery <br> items flat lay on with background-stock photo</p>
-                        <button class="btn-primary">Shop Now</button>
+                  <div class="hero-container">
+                        <div class="content-box">
+                              <h1>The Best <br> Collection 2024</h1>
+                              <p>Luxury fashionable clothing and stationery <br> items flat lay on with background-stock photo</p>
+                              <button class="btn-primary">Shop Now</button>
+                        </div>
+                        <div class="image-box">
+                              <img class="" src="/assets/images/shop-hero.png" alt="">
+                        </div>
                   </div>
-                  <div class="image-box">
-                        <img src="/assets/images/shop-hero.png" alt="">
-                  </div>
-
             </section>
-
+            <div class="service-container">
+                  <div>
+                        <img src="/assets/icons/local_shipping_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        <span><h5>Free</h5>
+                              <p>Delivery</p>
+                        </span>
+                  </div>
+                  <div>
+                        <img src="/assets/icons/credit_score_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        <span><h5>Quick Payment</h5>
+                              <p>100% Secure Payment</p>
+                        </span>
+                  </div>
+                  <div>
+                        <img src="/assets/icons/local_shipping_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        <span><h5>Gift Certificate</h5>
+                              <p>Buy Now $120.40</p>
+                        </span>
+                  </div>
+                  <div>
+                        <img src="/assets/icons/support_agent_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        <span><h5>24/7 Support</h5>
+                              <p>Ready Support</p>
+                        </span>
+                  </div>
+            </div>
+            <h1 class="top-collection">Our Top Collection</h1>
+            <div class="tabs">
+              <button data-tab="tab1">Best Sellers</button>
+              <button data-tab="tab2">Trending</button>
+              <button data-tab="tab3">New Arrival</button>
+            </div>
+            <div class="dropdown">
+                  <div class="select-box">
+                        <p class="select-text">Select Category</p>
+                        <img src="/assets/icons/keyboard_arrow_down_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                  </div>
+                  <ul class="items">
+                        <li data-tab="tab1" value="best sellers">Best Sellers</li>
+                        <li data-tab="tab2" value="trending">Trending</li>
+                        <li data-tab="tab3" value="new arrival">New Arrival</li>
+                    </ul>
+            </div>
+            <section>
+                  <div id="tab1"></div>
+                  <div id="tab2"></div>
+                  <div id="tab3"></div>
+                  <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente similique, voluptatum rerum id recusandae modi. Eaque ipsam ullam dignissimos, dolor veritatis amet alias hic eos sint omnis tempore perspiciatis rerum.</div>
+            </section>
       </main>
-
+      
        <footer>
                   <div class="content">
                         <h4>About Us</h4>
@@ -94,6 +151,8 @@
                         <a href="#">New Product</a>
                         <a href="#">Faq</a>
                   </div>
-       </footer>
+       </footer> 
+
+       <script src="/assets/js/dropdown.js"></script>
  </body>
  </html>
