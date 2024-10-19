@@ -56,7 +56,7 @@ input:focus{
       height: 60%;
       background-color: var(--color-btn-primary);
       position: absolute;
-      left: 35%;
+      left: 37%;
       top: 20%;
 }
       nav{
@@ -97,6 +97,7 @@ input:focus{
       .category-items{
                   margin-top: 4px;
                   position: absolute;
+                  font-family: var(--font-family-secondary);
                   top: 25%;
                   padding: 10px;
                   display: none;

@@ -98,6 +98,7 @@
       }
       .items{
             margin-top: 4px;
+            z-index: 1;
             position: absolute;
             display: none;
             border-radius: 5px;

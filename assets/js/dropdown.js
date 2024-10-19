@@ -4,7 +4,7 @@ const items= document.querySelector('.items');
 const item= document.querySelectorAll(".items li");
 const selectText=document.querySelector('.select-text');
 selectBox.addEventListener('click',function(){
-      items.classList.toggle('active')
+      items.classList.toggle('active');
 });
 for(option of item){
       option.addEventListener('click', function(event){
@@ -27,7 +27,7 @@ for(option of categoryItem){
       option.addEventListener('click',function(event){
             let getItem= event.target.textContent;
             console.log(getItem)
-            categoryItems.classList.remove('active')
+            categoryItems.classList.remove('active');
 
       })
 }
