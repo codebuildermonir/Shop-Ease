@@ -11,6 +11,9 @@
       .service-container{
             top:-40px;
         }
+        .offer-container{
+            flex-direction: column;
+        }
 
   }
 @media (max-width: 767.98px) {  
@@ -41,6 +44,10 @@
                  white-space: wrap;
             }
       }
+      }
+      .left-box,.right-box{
+            flex-direction: column;
+           
       }
 }
 
