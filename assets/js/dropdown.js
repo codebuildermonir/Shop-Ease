@@ -13,7 +13,6 @@ for(option of item){
             items.classList.remove('active');
       })
 }
-
 /* Category */
 const categoryBox= document.querySelector('.category-box');
 const categoryItems=document.querySelector('.category-items');
@@ -28,6 +27,20 @@ for(option of categoryItem){
             let getItem= event.target.textContent;
             console.log(getItem)
             categoryItems.classList.remove('active');
-
       })
 }
+
+/* mobile nav */
+const openMenu= document.querySelector('.menuBar');
+const mobileNav= document.querySelector('.mobile-nav');
+const overlay= document.querySelector('.bg-overlay');
+const closeMenu= document.querySelector('.svg')
+openMenu.addEventListener('click', function(){
+      mobileNav.classList.add('open')
+      overlay.classList.add('open')
+});
+closeMenu.addEventListener('click',function(){
+      mobileNav.classList.remove('open')
+      overlay.classList.remove('open')
+})
+
