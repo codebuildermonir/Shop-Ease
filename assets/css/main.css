@@ -165,7 +165,7 @@
     flex-wrap: wrap;
     background-color: #FFFFFF;
     padding: 20px;
-    margin: 40px 0;
+    margin: 40px 0;}
     .card-img {
       max-width: 260px;
       height: 350px;
@@ -246,8 +246,6 @@
       text-decoration: line-through;
       margin-right: 15px;
     }
-  
-  }
 
   .card::after{
     background-color: #EB0029;
@@ -263,7 +261,30 @@
 .tab-container{
   display: none;
 }
-  
+
  .active{
   display: block;
  }
+
+ /* Swiper Slider */
+ 
+.swiper-wrapper{
+  padding: 20px;
+
+}
+.swiper-slide {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: var(--color-btn-secondary);
+ 
+}
+.swiper-pagination-bullet{
+  height: 12px !important;
+  width: 12px !important;
+}
+
+

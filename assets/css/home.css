@@ -150,3 +150,13 @@
             object-position: center;
       }
 }
+.top-container{
+     flex-wrap: nowrap;
+     flex-shrink: 0;
+     margin-bottom: 0;
+    .card-img{
+      width: 260px;
+      
+    }
+}
+

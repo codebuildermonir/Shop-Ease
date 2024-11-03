@@ -1,7 +1,6 @@
 const tabButtons= document.querySelectorAll(".tabs button");
 const containers= document.querySelectorAll('.tab-container');
 const tabItems= document.querySelectorAll('.items li');
-console.log(tabItems)
 for(let tabButton of tabButtons){
       tabButton.addEventListener('click', function(event){
            for(tabContainer of containers){
