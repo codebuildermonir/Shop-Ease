@@ -1,53 +1,91 @@
 /* Home page Responsive */
-@media (max-width: 1199.98px) { 
-      .service-container{
+@media (max-width: 1199.98px) {
+      .service-container {
             grid-template-columns: repeat(2, 1fr);
       }
-      .tabs{
+
+      .tabs {
             width: 45%;
       }
- }
- @media (max-width: 991.98px) {
-      .service-container{
-            top:-40px;
-        }
-        .offer-container{
-            flex-direction: column;
-        }
 
-  }
-@media (max-width: 767.98px) {  
-      .hero-container{
+}
+
+@media (max-width: 991.98px) {
+      .service-container {
+            top: -40px;
+      }
+
+      .offer-container {
+            flex-direction: column;
+      }
+
+      .home-category {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .mobile-item {
+                  width: 100%;
+            }
+
+            .watch-item {
+                  width: 100%;
+
+                  .watch-mg,
+                  .gold-mg {
+                        height: auto;
+                  }
+
+            }
+
+            .cosmetic-item {
+                  width: 100%;
+            }
+      }
+
+
+}
+
+@media (max-width: 767.98px) {
+      .hero-container {
             flex-direction: column;
             gap: 20px;
             align-items: center;
       }
-      .service-container{
+
+      .service-container {
             grid-template-columns: repeat(2, 1fr);
       }
-      .tabs{
+
+      .tabs {
             display: none;
       }
-      .dropdown{
+
+      .dropdown {
             display: block;
       }
 }
-@media (max-width:680px){
-      .service-container{
-          grid-template-columns: repeat(1, 1fr);
-          justify-content: center;
-          align-content: center;
-        
-          div{
-            h5,p{
-                  margin: 0;
-                 white-space: wrap;
+
+@media (max-width:680px) {
+      .service-container {
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            align-content: center;
+
+            div {
+
+                  h5,
+                  p {
+                        margin: 0;
+                        white-space: wrap;
+                  }
             }
       }
-      }
-      .left-box,.right-box{
+
+      .left-box,
+      .right-box {
             flex-direction: column;
-           
+
       }
 }
 
@@ -74,20 +112,9 @@
 
 
 
-@media (max-width:420px) {
-      
-  }
-  @media (max-width:768px) {
-      
-  }
-  
+@media (max-width:420px) {}
 
-@media (max-width:1170px){
-      
-}
+@media (max-width:768px) {}
 
 
-  
-
- 
-
+@media (max-width:1170px) {}
