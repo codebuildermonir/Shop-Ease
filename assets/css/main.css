@@ -313,14 +313,11 @@ small {
 .swiper-wrapper {
   padding: 20px;
   margin-bottom: 20px;
-
 }
 
 .swiper-slide {
   font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
