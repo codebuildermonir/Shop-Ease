@@ -64,6 +64,9 @@
       .dropdown {
             display: block;
       }
+      .wrapper-about{
+            margin-right: 20%;
+      }
 }
 
 @media (max-width:680px) {

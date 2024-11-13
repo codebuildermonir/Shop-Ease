@@ -329,3 +329,19 @@ small {
   height: 12px !important;
   width: 12px !important;
 }
+
+.top-collection {
+  text-align: center;
+  position: relative;
+}
+
+.top-collection::before {
+  content: " ";
+  width: 200px;
+  height: 2px;
+  background-color: var(--color-btn-primary);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
