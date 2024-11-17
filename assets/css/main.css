@@ -17,8 +17,8 @@
   /* 14px */
 
   /* Font family */
-  --font-family-primary: 'Helvetica Neue', Arial, sans-serif;
-  --font-family-secondary: 'Georgia', serif;
+  --font-family-primary: "Helvetica Neue", Arial, sans-serif;
+  --font-family-secondary: "Georgia", serif;
 
   /* Line height */
   --line-height-body: 1.6;
@@ -29,11 +29,11 @@
   --font-weight-bold: 700;
 
   /* Colors */
-  --color-btn-primary: #EB0029;
-  --color-btn-secondary: #FC791A;
-  --color-text-primary: #010F1C;
-  --color-text-secondary: #FFFFFF;
-  --color-bg: #F4F1EA;
+  --color-btn-primary: #eb0029;
+  --color-btn-secondary: #fc791a;
+  --color-text-primary: #010f1c;
+  --color-text-secondary: #ffffff;
+  --color-bg: #f4f1ea;
 }
 
 body {
@@ -41,10 +41,9 @@ body {
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
   color: var(--color-text-primary);
-  background-color: #F4F1EA;
+  background-color: #f4f1ea;
   padding: 0;
   margin: 0;
-
 }
 
 h1 {
@@ -80,7 +79,6 @@ h5 {
 p {
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
-
 }
 
 small {
@@ -93,7 +91,6 @@ small {
   padding: 0 20px;
   margin: auto;
   box-sizing: border-box;
-
 }
 
 @media (max-width: 768px) {
@@ -140,7 +137,7 @@ small {
 
 .btn-primary::after {
   content: " ";
-  background-color: #EB0029;
+  background-color: #eb0029;
   position: absolute;
   width: 100%;
   height: 50%;
@@ -156,7 +153,7 @@ small {
 
 .btn-primary::before {
   content: "";
-  background-color: #EB0029;
+  background-color: #eb0029;
   position: absolute;
   width: 100%;
   height: 50%;
@@ -168,7 +165,6 @@ small {
 
 .btn-primary:hover::before {
   width: -0%;
-
 }
 
 .btn-secondary {
@@ -176,7 +172,6 @@ small {
   padding: 14px 40px;
   font-size: var(--font-size-body);
   background-color: inherit;
-
 }
 
 .card-container {
@@ -186,7 +181,7 @@ small {
   gap: 40px;
   border-radius: 5px;
   flex-wrap: wrap;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 20px;
   margin: 40px 0;
 }
@@ -244,7 +239,7 @@ small {
 }
 
 .card-btn1 {
-  background-color: #EB0029;
+  background-color: #eb0029;
 }
 
 .overlay .btn-box .card-btn1,
@@ -260,7 +255,6 @@ small {
 
 .card-img:hover .overlay {
   visibility: visible;
-
 }
 
 .card-content h5 {
@@ -284,12 +278,11 @@ small {
 }
 
 .card::after {
-  background-color: #EB0029;
+  background-color: #eb0029;
   width: 100%;
   height: 50%;
   position: absolute;
   top: 20px;
-
 }
 
 .card-img:hover.overlay {
@@ -317,12 +310,10 @@ small {
 
 .swiper-slide {
   font-size: 18px;
-
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--color-btn-secondary);
-
 }
 
 .swiper-pagination-bullet {
@@ -344,4 +335,56 @@ small {
   bottom: -10px;
   left: 50%;
   transform: translate(-50%);
+}
+
+.hero-banner {
+  overflow: hidden;
+  background-position: center;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-about {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: rgba(0, 255, 255, 0.411);
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.651);
+  border-radius: 100%;
+  padding: 6px;
+  font-family: var(--font-family-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: var(--font-size-body);
+    color: var(--color-text-primary);
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+  }
 }
