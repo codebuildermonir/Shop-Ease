@@ -20,6 +20,7 @@ const categoryItem = document.querySelectorAll(".category-items li");
 const categoryText = document.querySelector(".category-text");
 categoryBox.addEventListener("click", function () {
   categoryItems.classList.toggle("active");
+  console.log("hel");
 });
 for (option of categoryItem) {
   option.addEventListener("click", function (event) {

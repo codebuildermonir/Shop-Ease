@@ -21,7 +21,7 @@ for (let tabItem of tabItems) {
 }
 /* Shop page */
 const categoriesItems = document.querySelectorAll(".categories-items li");
-console.log(categoriesItems)
+console.log(categoriesItems);
 const allContainer = document.querySelector(".allContainer");
 const allContainers = allContainer.querySelectorAll(".card-container");
 for (categoriesItem of categoriesItems) {
@@ -34,3 +34,27 @@ for (categoriesItem of categoriesItems) {
   });
 }
 
+/* Shop mobile category */
+const shopCategoryOpen = document.querySelector(".mobileIconOpen");
+const shopCategoryClose = document.querySelector(".mobileIconClose");
+const shopCategoryItems = document.querySelector(".mobileCategoryItems");
+shopCategoryOpen.addEventListener("click", function () {
+  shopCategoryItems.classList.add("openCategory");
+});
+shopCategoryClose.addEventListener("click", function () {
+  shopCategoryItems.classList.remove("openCategory");
+});
+
+/* Sort */
+const sort = document.querySelector(".sort");
+const sortBox = document.querySelector(".sort-box");
+const sortLists = sortBox.querySelectorAll("li");
+sort.addEventListener("click", function () {
+  sortBox.classList.toggle("active-sort");
+});
+
+for (sortList of sortLists) {
+  sortList.addEventListener("click", function () {
+    sortBox.classList.toggle("active-sort");
+  });
+}
